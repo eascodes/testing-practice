@@ -1,4 +1,4 @@
-import { capitalize } from "./index";
+import { capitalize, reverseString } from "./index";
 
 test('capitalizes first character of string', () => {
     expect(capitalize('please capitalize me')).toMatch(/Please capitalize me/);
