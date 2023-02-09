@@ -4,7 +4,8 @@
   "description": "The goal of this project is to practice Test Driven Development using Jest.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "jest --watch *.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/eascodes/testing-practice/issues"
   },
-  "homepage": "https://github.com/eascodes/testing-practice#readme"
+  "homepage": "https://github.com/eascodes/testing-practice#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2"
+  }
 }
