@@ -29,5 +29,5 @@ test('caesarCipher', () => {
 });
 
 test('caesarCipher', () => {
-    expect(caesarCipher('All the zebras?! Escaped from the zoo?', 3)).toMatch('fqq ymj ejgwfx?! jxhfuji kwtr ymj ett?');
+    expect(caesarCipher('All the zebras?! Escaped from the zoo?', 5)).toMatch('Fqq ymj ejgwfx?! Jxhfuji kwtr ymj ett?');
 });

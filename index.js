@@ -71,6 +71,3 @@ function shiftToString(origArr, newArr, shift) {
      }
     return newArr.join('');
 }
-
-//need to wrap z to a
-//need to figure out case sensitivity
