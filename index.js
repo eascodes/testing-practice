@@ -71,3 +71,20 @@ function shiftToString(origArr, newArr, shift) {
      }
     return newArr.join('');
 }
+
+export function analyzeArray(arr) {
+    let sum = 0, tempMax, tempMin;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        if (arr[i] > tempMax || tempMax === undefined) tempMax = arr[i];
+        if (arr[i] < tempMin || tempMin === undefined) tempMin = arr[i];
+    }
+
+    let obj = {
+        average: sum / arr.length,
+        min: tempMin,
+        max: tempMax,
+        length: arr.length
+    }
+    return obj;
+}
